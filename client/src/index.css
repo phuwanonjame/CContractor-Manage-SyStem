@@ -1,0 +1,77 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap');
+body,html {
+  margin: 0; /* ลบ margin ที่ถูกกำหนดโดยอัตโนมัติ */
+  padding: 0; /* ลบ padding ที่ถูกกำหนดโดยอัตโนมัติ */
+  width: 100%;
+  height: 100%;
+  font-family: 'Inter', sans-serif;
+}
+/* Assignworks.css */
+
+.custom-table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.custom-table th, .custom-table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: center;
+}
+
+.custom-table th {
+  background-color: #4CAF50;
+  color: white;
+}
+.table-container {
+  max-height: 550px; /* Set your desired max height here */
+  overflow-y: auto;
+}
+.humbar{
+  display: none;
+}
+@media (max-width: 767px) {
+  .navbar{
+    display: none;
+  }
+  .humbar{
+    display: block;
+  }
+  .login{
+    display: block;
+    align-items: center;
+    justify-content: center;
+  }
+  .pos-login{
+  display: flex; 
+  align-items: center;
+  justify-content: center;
+  margin-top: 10px;
+  padding-bottom: 20px;  
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+  .img{
+    display: none;
+  }
+  .bg-op{
+    width: 490px;
+  }
+  .bg-op1{
+    display: block;
+    text-align: center;
+  }
+  .in-op{
+    width: 200px;
+    height: 30px;
+  }
+  .bt-op{
+    justify-content: center;
+  }
+}
