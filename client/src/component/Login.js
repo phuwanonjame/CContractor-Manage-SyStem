@@ -50,9 +50,9 @@ function Login() {
         <p className=" text-sm ml-48 text-black">Power By CPETC</p>
       </div>
       <div className="pos-login "> 
-      <div className=" w-96 h-96 bg-slate-300 rounded-md drop-shadow-md">
+      <div className=" w-96 h-96 bg-slate-200  rounded-md drop-shadow-md">
         <div className="header flex text-center items-center justify-center ">
-          <p className="text-2xl mt-4 text-red-700 ">Login-SIG</p>
+          <p className="text-3xl mt-4 text-red-700 ">Login-SIG</p>
         </div>
         <div className="body flex items-center justify-center mt-10 ">
           <div className="">
@@ -60,7 +60,7 @@ function Login() {
             <input
               value={user}
               onChange={(e) => setUsername(e.target.value)}
-              className=" rounded-md w-56 h-8"
+              className=" p-2 rounded-md w-56 h-8"
             ></input>
           </div>
         </div>
@@ -70,7 +70,7 @@ function Login() {
             <input
               value={pass}
               onChange={(e) => setPassword(e.target.value)}
-              className=" rounded-md w-56 h-8"
+              className="p-2 rounded-md w-56 h-8"
             ></input>
           </div>
         </div>
